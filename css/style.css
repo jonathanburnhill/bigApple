@@ -1,0 +1,281 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  text-align: center;
+
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+list-style: none;
+padding: 0;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+/** Container for whole page **/
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+
+/**   Skip link   **/
+  .skip__link {
+    background: green;
+    color: white;
+    font-size: 0.7em;
+    left: 0;
+    padding: 8px;
+    position: absolute;
+    text-decoration: none;
+    top: -40px;
+    z-index: 100;
+  }
+
+  .skip__link:focus {
+    top: 0;
+}
+
+.focused {
+  border-radius: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+}
+
+/**  Header **/
+
+.header {
+  flex-direction: row;
+  padding: 0;
+  width: 100%;
+}
+
+.header__title {
+  font-size: 1.25rem;
+  padding: inherit;
+  width: 100%;
+}
+
+.header__title--text {
+  color: #0a2c63;
+  font-size: inherit;
+  text-decoration: none;
+  width: 100%;
+
+
+  /** for tet stroke for borwsers that support it**/
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+
+
+    background: -webkit-linear-gradient(#D4AF37, #0a2c63);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+}
+
+.home__link {
+  font-size: 0.5em;
+}
+
+.header__display {
+  display: inline;
+}
+
+/**  map **/
+.map__container {
+  width: 100vw;
+}
+
+.google__map {
+  width: 100vw;
+  max-width: 1000px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+/** Drop down options **/
+
+
+
+.filter__options {
+  margin: none;
+  width: 100vw;
+}
+
+.neighbourhood__options {
+  border-radius: 5px;;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cuisnes__options {
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.cuisnes__options:focus {
+  border: 2px solid #D4AF37
+}
+
+
+/** Restaurant results **/
+.resturant__results {
+  width: 100vw;
+  padding:0;
+}
+
+.resturant__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.restaurant__results--list {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 1vw;
+}
+
+.restaurant__box {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 400px;
+  width:100%;
+}
+.restaurant__header{
+  width: 100vw;
+}
+
+.restaurant__header--title {
+  font-size: 0.8rem;
+}
+
+
+/**Reviews **/
+
+.reviews__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  padding-left: 0;
+  width: 100vw;
+}
+
+.comments {
+  background-color: white;
+  font-size: .9375rem;
+  line-height: 1.5em;
+  overflow-wrap: break-word;
+  width: 95vw;
+  max-width: 900px;
+}
+
+.review__info {
+  text-align: left;
+  margin-left: 1vw;
+}
+
+.name__info {
+  color: #e51d1d;
+}
+
+.date__info {
+  color: #209b58;
+}
+
+.rating__info {
+  color: #2671c1;
+}
+/** Footer **/
+
+.footer__title {
+  text-align: center;
+  width: 100vw;
+}
+
+@media screen and (min-width: 400px) {
+  .header__title {
+    font-size: calc(1.25rem + 3.125vw - 10px);
+}
+
+.restaurant__results--list {
+  margin-left: auto;
+}
+
+
+.restaurant__header--title {
+  font-size: calc(0.8rem + 3vw - 10px)
+}
+
+.comments {
+  font-size: calc( .9375rem + .46875vw - 1.5px );
+    line-height: calc( 1.5em + .7031vw - 2.25px );
+}
+
+.review__info {
+  display: inline;
+  margin-right: 2vw;
+}
+}
+
+@media screen and (min-width: 960px) {
+  .header__title {
+    font-size: calc(1.25rem + 20px);
+}
+
+.focused {
+  width: 20vw;
+  max-width: 25vw;
+}
+
+.restaurant__box {
+  width: 50vw;
+}
+
+.resturant__link:focus {
+  font-size: 2em;
+}
+
+
+.restaurant__header--title {
+  font-size: 2rem;
+}
+
+.comments {
+    font-size: calc( .9375rem + 3px );
+    line-height: calc( 1.5em + 4.5px );
+}
+}
+h2:focus {outline:0 !important;}
